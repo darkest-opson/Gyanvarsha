@@ -1,7 +1,7 @@
 import streamlit as st
 
 # The URL to redirect to
-redirect_url = "https://www.youtube.com"
+redirect_url = "https://github.com/"
 
 # HTML code for the redirection
 redirect_html = f"""
