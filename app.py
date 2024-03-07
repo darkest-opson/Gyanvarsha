@@ -7,7 +7,7 @@ redirect_url = "https://github.com/"
 redirect_html = f"""
     <html>
         <head>
-            <meta http-equiv="refresh" content="0;URL='{redirect_url}'" />
+            <meta http-equiv="refresh" content="0";URL='{redirect_url}' />
         </head>
         <body>
             <a href="{redirect_url}">Gyanvarsha</a>...
