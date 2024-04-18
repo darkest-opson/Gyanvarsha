@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --primary_color: rgb(11, 0, 53);
+    --secondry_color: rgb(173, 173, 212);
+    --background_color: #aaf9e3;
+    /* --background_color: white; */
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Baloo 2", sans-serif;
+
+}
+
+body {
+    background-color: var(--background_color);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--primary_color);
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--primary_color);
+}
+
+::placeholder {
+    color: var(--primary_color);
+    /* margin: auto; */
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+
+/* ------------------------------------ navbar styling------------------------------------ */
+
+.head {
+    position: sticky;
+    top: 0px;
+
+}
+
+.navbar {
+    display: flex;
+    width: 100vw;
+    height: 13vh;
+    background-color: var(--background_color);
+
+
+}
+
+.logo_img {
+    width: 70px;
+    margin-top: 0.4rem;
+    margin-left: 5vw;
+    border-radius: 400px;
+}
+
+.nav_buttons {
+    margin: auto;
+    list-style-type: none;
+    margin-top: 2.5%;
+    font-size: 1.25rem;
+    display: inline-flex;
+    /* box-shadow: 10px 1px 5px lightblue; */
+}
+
+.navbar_links {
+    margin-left: 7vw;
+    color: var(--primary_color);
+}
+
+.navbar_links:hover {
+    border-radius: 5px;
+    scale: 1.5;
+}
+
+
+/* ----------------------------------main ::content styling---------------------------- */
+.main_main {
+    width: 100%;
+    text-align: center;
+}
+
+.main_container {
+    height: 80vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.flex_img {
+    /* border-radius: 12px; */
+    min-width: 100%;
+    /* min-height: 90%; */
+    height: 90%;
+
+}
+
+.upright {
+    position: fixed;
+    top: 90vh;
+    right: 2vw;
+}
+
+/* .home {
+    height: 100vh;
+} */
+
+/* -------------------------------------aboutus---------------------------------- */
+.about {
+    text-align: justify;
+    margin-top: 20vh;
+    width: 100vw;
+}
+
+.about_us h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about_tutor {
+    display: flex;
+    /* width: 100vw; */
+
+}
+
+.about_tutor h3 {
+    text-align: center;
+}
+
+.cont {
+    padding: 20px 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    /* box-shadow: 10px 10px 5px lightblue; */
+}
+
+.tutor_img {
+    width: 11vw;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+.about_tutor_text {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.about_tutor_text p {
+    font-size: 1.5rem;
+}
+
+/* ---------------------------------------contactus---------------------------- */
+.wrap_contactus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    width: 100%;
+    padding-top: 15vh;
+
+}
+
+.form {
+    display: block;
+    align-items: center;
+    margin-left: 10%;
+    /* text-align: center; */
+}
+
+input,textarea{
+    width: 60%;
+    height: 50px ;
+    text-align: center;
+    margin: 1%;
+    border: 2px solid var(--primary_color);
+    border-radius: 10px;
+    margin-left: 8%;
+    font-size: 1rem;
+}
+textarea{
+    height: 9rem;
+
+}
+.submit{
+    display: block;
+    width: 10%;
+    height: 10% ;
+    text-align: center;
+    margin: 1%;
+    border: 2px solid var(--primary_color);
+    border-radius: 10px;
+    margin-left: 30%;
+}
+.submit:hover{
+    background-color: var(--secondry_color);
+}
+
+.contactinfo {
+    font-size: 1.5rem;
+    padding-left: 8rem;
+    padding-top: 8rem;
+
+}
+
+
+/* --------------------------------------footer styling------------------------------------ */
+.footer {
+    background-color: rgb(11, 0, 53);
+    height: 25vh;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100vw;
+}
+
+.footer h1 {
+    color: white;
+}
+
+footer img {
+    margin: 0rem 1rem;
+}
+
+/* ---------------------------------------------phones------------- */
+@media screen and (min-device-width: 400px) and (max-device-width: 550px) {
+
+    /* -------------------------------------------navbar---------------------- */
+    .head {
+        position: sticky;
+        top: 0px;
+
+    }
+
+    .navbar {
+        display: flex;
+        min-width: 172vw;
+        height: 12vh;
+        background-color: #7fd5be;
+
+    }
+
+    .logo_img {
+        width: 5rem;
+        margin-top: 1.4rem;
+        margin-left: 5vw;
+        border-radius: 400px;
+    }
+
+    .nav_buttons {
+
+        margin: auto;
+        list-style-type: none;
+        font-size: 1.5rem;
+        display: flex;
+        /* box-shadow: 10px 1px 5px lightblue; */
+    }
+
+    .navbar_links {
+        margin-left: 10vw;
+        margin-top: 2vh;
+        color: var(--primary_color);
+    }
+
+    .navbar_links:hover {
+        border-radius: 5px;
+        scale: 1.5;
+
+
+    }
+
+    /* ----------------------------------------------main------------------- */
+    .main_main {
+        /* height: 100%;
+        width: 100%; */
+        text-align: center;
+    }
+
+    .main_container {
+        min-width: 172vw;
+        height: 13vh;
+        text-align: center;
+    }
+
+    .flex_img {
+        /* border-radius: 12px; */
+        min-width: 100%;
+        /* min-height: 10%; */
+        height: 60%;
+
+    }
+
+    .upright {
+        /* position: fixed;
+        top: 160vh;
+        right: 2vw; */
+        display: none;
+    }
+
+    /* ------------------------------------about--------------------- */
+    .about {
+        text-align: justify;
+        margin-top: 25vh;
+        width: 172vw;
+    }
+
+    .about_us h1 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .about_tutor {
+        display: flex;
+        /* width: 100vw; */
+
+    }
+
+    .about_tutor h3 {
+        /* text-align: center;
+        font-size: 0.7rem; */
+        display: none;
+    }
+
+    .cont {
+        /* padding: 20px 10px; */
+        /* margin: 10px; */
+        box-sizing: border-box;
+        border-radius: 5px;
+        /* box-shadow: 10px 10px 5px lightblue; */
+    }
+
+    .tutor_img {
+        /* width:10em;
+        border: 5px solid black;
+        border-radius: 20px; */
+        display: none;
+    }
+
+    .about_tutor_text {
+        padding-left: 10px;
+        padding-right: 10px;
+        /* min-width: 200px; */
+    }
+
+    .about_tutor_text p {
+        font-size: 1rem;
+        /* min-width: 100%; */
+    }
+
+    /* ---------------------contactus----------------- */
+    .wrap_contactus {
+        display: block;
+        /* align-items: center; */
+        margin-left: 5rem;
+
+    }
+
+    .form {
+        text-align: center;
+        height: 80vh
+    }
+
+    input,textarea{
+        width: 100%;
+        height: 50px ;
+        text-align: center;
+        margin: 1%;
+        border: 2px solid var(--primary_color);
+        border-radius: 10px;
+        margin-left: 8%;
+        font-size: 1rem;
+    }
+    textarea{
+        height: 9rem;
+    
+    }
+    .submit{
+        display: block;
+        width: 20%;
+        height: 10% ;
+        text-align: center;
+        margin: 1%;
+        border: 2px solid var(--primary_color);
+        border-radius: 10px;
+        margin-left: 50%;
+    }
+    .submit:hover{
+        background-color: var(--secondry_color);
+    }
+    
+    .contactinfo {
+        padding: 3rem;
+        padding-left: 6rem;
+    }
+
+    /* --------------------------------------footer styling------------------------------------ */
+    .footer {
+        background-color: rgb(11, 0, 53);
+        height: 100%;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        width: 172vw;
+    }
+
+    .footer h1 {
+        color: white;
+    }
+
+    .footer a {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-device-width: 551px) and (max-device-width: 700px) {
+
+    /* -------------------------------------------navbar---------------------- */
+    .head {
+        position: sticky;
+        top: 0px;
+
+    }
+
+    .navbar {
+        display: flex;
+        min-width: 172vw;
+        height: 12vh;
+        background-color: #7fd5be;
+
+    }
+
+    .logo_img {
+        width: 5rem;
+        margin-top: 1.4rem;
+        margin-left: 5vw;
+        border-radius: 400px;
+    }
+
+    .nav_buttons {
+
+        margin: auto;
+        list-style-type: none;
+        font-size: 2rem;
+        display: flex;
+        /* box-shadow: 10px 1px 5px lightblue; */
+    }
+
+    .navbar_links {
+        margin-left: 10vw;
+        margin-top: 2vh;
+        color: var(--primary_color);
+    }
+
+    .navbar_links:hover {
+        border-radius: 5px;
+        scale: 1.5;
+
+
+    }
+
+    /* ----------------------------------------------main------------------- */
+    .main_main {
+        /* height: 100%;
+            width: 100%; */
+        text-align: center;
+    }
+
+    .main_container {
+        min-width: 172vw;
+        height: 13vh;
+        text-align: center;
+    }
+
+    .flex_img {
+        /* border-radius: 12px; */
+        min-width: 100%;
+        /* min-height: 10%; */
+        height: 60%;
+
+    }
+
+    .upright {
+        display: none;
+    }
+
+    /* ------------------------------------about--------------------- */
+    .about {
+        text-align: justify;
+        /* margin-top: 10vh; */
+        width: 172vw;
+        margin-top: 35vh;
+    }
+
+    .about_us h1 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .about_tutor {
+        display: flex;
+        /* width: 100vw; */
+
+    }
+
+    .about_tutor h3 {
+        /* text-align: center;
+            font-size: 0.7rem; */
+        display: none;
+    }
+
+    .cont {
+        /* padding: 20px 10px; */
+        /* margin: 10px; */
+        box-sizing: border-box;
+        border-radius: 5px;
+        /* box-shadow: 10px 10px 5px lightblue; */
+    }
+
+    .tutor_img {
+        /* width:10em;
+            border: 5px solid black;
+            border-radius: 20px; */
+        display: none;
+    }
+
+    .about_tutor_text {
+        padding-left: 10px;
+        padding-right: 10px;
+        /* min-width: 200px; */
+    }
+
+    .about_tutor_text p {
+        font-size: 1rem;
+        /* min-width: 100%; */
+    }
+
+    /* ---------------------contactus----------------- */
+
+    .wrap_contactus {
+        display: block;
+        grid-template-columns: 1fr 1fr;
+        min-width: 172vw;
+        padding-top: 5vh;
+
+    }
+
+    .form {
+        text-align: center;
+        height: 80vh;
+    }
+
+    input,textarea{
+        width: 100%;
+        height: 50px ;
+        text-align: center;
+        margin: 1%;
+        border: 2px solid var(--primary_color);
+        border-radius: 10px;
+        margin-left: 8%;
+        font-size: 1rem;
+    }
+    textarea{
+        height: 9rem;
+    
+    }
+    .submit{
+        display: block;
+        width: 20%;
+        height: 10% ;
+        text-align: center;
+        margin: 1%;
+        border: 2px solid var(--primary_color);
+        border-radius: 10px;
+        margin-left: 50%;
+    }
+    .submit:hover{
+        background-color: var(--secondry_color);
+    }
+
+    .contactinfo {
+        padding: 3rem;
+        padding-left: 21rem;
+    }
+
+    /* --------------------------------------footer styling------------------------------------ */
+    .footer {
+        background-color: rgb(11, 0, 53);
+        height: 100%;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        width: 172vw;
+    }
+
+    .footer h1 {
+        color: white;
+    }
+
+    .footer a {
+        padding: 1rem;
+    }
+}

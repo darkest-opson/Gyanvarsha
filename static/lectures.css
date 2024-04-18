@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Baloo 2", sans-serif;
+
+}
+:root {
+    --primary_color: rgb(11, 0, 53);
+    --secondry_color: rgb(173, 173, 212);
+    --background_color: #7fd5be;
+    /* --background_color:white; */
+
+  }
+h1,h2,h3{
+    color: rgb(52, 12, 197);
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-top: 2%;
+}
+li:hover{
+    scale : 1.05;
+}
+.container img{
+    width: 50%;
+    border-radius: 50px;
+    padding: 0 2rem;
+}
+
+.container h3{
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+/* .container h3:hover{
+    border-radius: 5px;
+    border-left: 2px solid black;
+    border-bottom:2px solid black ;
+} */
+.lectures h1{
+    margin-top:5vh ;
+    text-align: center;
+}
+@media screen and (min-device-width: 350px) and (max-device-width: 800px) {
+    body{
+        min-width: 172vw;
+    }
+
+    /* -------------------------------------------navbar---------------------- */
+    .head {
+        position: sticky;
+        top: 0px;
+
+    }
+
+    .navbar {
+        display: flex;
+        min-width: 172vw;
+        height: 12vh;
+        background-color: var(--background_color);
+
+    }
+
+    .logo_img {
+        width: 3rem;
+        margin-top: 0.4rem;
+        margin-left: 5vw;
+        border-radius: 400px;
+    }
+
+    .nav_buttons {
+
+        margin: auto;
+        list-style-type: none;
+        font-size: 0.8rem;
+        display: flex;
+        /* box-shadow: 10px 1px 5px lightblue; */
+    }
+
+    .navbar_links {
+        margin-left: 15vw;
+        /* margin: auto; */
+        color: var(--primary_color);
+    }
+
+    .navbar_links:hover {
+        border-radius: 5px;
+        /* border-left: 2px solid black;
+        border-bottom: 2px solid black; */
+    }
+    .container{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-top: 2%;
+    }
+
+    .container img{
+        width: 50%;
+        /* border: 2px solid var(--primary_color);
+        border-radius: 50px; */
+        /* box-shadow: 10px 10px 5px  var(--secondry_color); */
+        padding: 0 2rem;
+    }
+    ul{
+        margin: auto;
+        margin-top: 3rem;
+    }
+    .container h3{
+        margin: auto;
+        margin-bottom: 2rem;
+    }
+    li:hover{
+        scale : 1.05;
+    }
+    .lectures h1{
+        margin-top:5vh ;
+        text-align: center;
+    }
+    .upright {
+        position: fixed;
+        top: 160vh;
+        right: 2vw;
+        /* display: none; */
+    }
+}
