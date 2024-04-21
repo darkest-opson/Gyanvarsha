@@ -34,6 +34,12 @@ def download_csv():
     # Send the file as an attachment
     return send_file(csv_path, as_attachment=True)
 
+@app.route('/clear')
+def download_csv():
+    with open("forms.csv", mode='w', newline='') as file:
+        pass
+    return render_template("index.html")
+
 
 
 if __name__ == "__main__":
